@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Accessible Site - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
+  </div>
+  <header role="banner" class="d-flex justify-content-center">Cory Coleman's Accessible Site</header>
+  <nav role="navigation" class="navbar navbar-default bg-white justify-content-center" aria-label="Main Navigation">
+    <ul id="navList" class="nav">
+      <!-- 
+        <li>
+        <span class="curPage">
+          <span class="vHidden">
+            Current Page: Home
+          </span>
+        </span>
+       </li>
+       -->
+      <li class="nav-item"><a href="index.html" class="nav-link active-link" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="plain_language.html" class="nav-link" target="_blank">Plain Language</a></li>
+      <li class="nav-item"><a href="design.html" class="nav-link" target="_blank">Design</a></li>
+      <li class="nav-item"><a href="about_me.html" class="nav-link" target="_blank">About Me</a></li>
+      <li class="nav-item"><a href="screen_reader.html" class="nav-link" target="_blank">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <main id="mainContent" role="main">
+    <div class="d-flex justify-content-center">
+      <h1 role="heading" aria-level="1">Welcome to My Accessibility Site</h1>
+    </div>
+    
+    <div id="statement" class="container-fluid col-8" aria-labelledby="statementHeader">
+      <h2 role="heading" aria-level="2">My Accessibility Statement</h2>
+      <p class="indent">
+        We are dedicated to creating a digitally accessible experience for everyone, including people living with disabilities. The work we do to provide the best user experience for everyone is ongoing, through applying the current accessibility standards as they apply to our website.
+      </p>
+
+      <p class="indent">
+        The Web Content Accessibility Guidelines (WCAG) defines requirements for designers and
+        developers to improve accessibility for people with disabilities. It defines three levels of
+        conformance: Level A, Level AA, and Level AAA. Cory's Accessible Website is partially
+        conformant with WCAG 2.1 level AA. Partially conformant means that some parts of the
+        content do not fully conform to the accessibility standard.
+      </p>
+
+      <p class="indent">
+        We welcome your feedback on the accessibility of Cory's Accessible Website. Please let us know if you encounter accessibility barriers on Cory's Accessible Website:
+      </p>
+
+      <ul class="indent">
+        <li>
+          Phone: (555)555-5555 
+        </li>
+        <li>
+          E-mail: corycoleman@mail.weber.edu 
+        </li>
+        <li>
+          Contact us on X @coleman_accessibility
+        </li>
+      </ul>
+
+      <p class="no-indent">
+        We try to respond to feedback within 3-5 business days.
+      </p>
+    </div>
+    
+    <section>
+      <div id="disabilities" class="container-fluid col-8">  
+        <article role="article" aria-labelledby="articleHeader">
+          <h2 id="articleHeader" role="heading" aria-level="2">Disabilities in America</h2>
+          <p class="indent">
+            The 2021 American Community Survey by the Census Bureau reported 13% of all Americans have a non-institutionalized disability. Of the roughly 38,903,887 adults with a disability in the United States, 19.7% of them live below the poverty line. This is almost double the number of adults in the United States who are below the poverty line. This is partially due to lower rates of employment for disabled people. In the United States, 25.9% of disabled people over the age of 16 are employed in the civilian sector, while 59.6% of all US citizens over 16 are employed in the same sector.
+          </p>
+
+          <p class="indent">
+            Comparing the breakdown of disability between my current state of residence, Utah, and the United States, Utah has a disabled population of 342,378 or 10.3% of the total population, compared to the United States which has 42,485,034 disabled people or 13.0% of the total population. Table 1: Disability Type by Gender for Utah and the United States shows the disparities between genders and types of disabilities.
+          </p>
+
+          <p class="no-indent">
+            There are a few reasons why these disparities exist; however, that is not a topic for this page.
+          </p>
+
+          <p class="indent">
+            When it comes to representation by race, there are some interesting differences between Utah and the United States. Table 2: Disability Percent by Race, you can see that Utah has a higher occurrence of disabilities in the Black or African American, American Indian and Alaska Natives, Native Hawai’ian and Other Pacific Islanders, and the Hispanic or Latino communities than the United States as a whole. However, for the White community in Utah, they have a lower occurrence of disability than the national rate.
+          </p>
+
+          <p class="indent">
+            When we take into consideration the rates of disabilities in the United States (roughly 40 million people) and Utah (roughly 350,000 people), we can understand the importance of building accessible experiences for all people.
+          </p>
+        </article>
+      </div>
+    </section>  
+    
+    <section>
+      <div id="universal-design" class="container-fluid col-8">
+        <article role="article" aria-labelledby="articleHeader2">
+          <h2 id="articleHeader2" role="heading" aria-level="2">Universal Design is Design for All</h2>
+          <p class="no-indent">
+            Even the creator of the web, Tim Berners-Lee understood the importance of inclusion in web design:
+          </p>
+
+          <p class="quote indent">
+            "The power of the web is in its universality. Access by everyone regardless of disability is an essential aspect."
+          </p>
+
+          <p class="no-indent">
+            This website applies the principles of Universal Design, as defined by Ronald Mace and his team: 
+          </p>
+
+          <ul class="indent">
+            <li>
+              Equitable Use
+              <br><p class="indent">The design is useful and marketable to people with diverse abilities</p>
+            </li>
+            <li>
+              Flexibility in Use
+              <br><p class="indent">The design accommodates a wide range of individual preferences and abilities</p>
+            </li>
+            <li>
+              Simple and Intuitive Use
+              <br><p class="indent">Use of the design is easy to understand, regardless of the user’s experience, knowledge, language, skills, or current concentration level</p>
+            </li>
+            <li>
+              Perceptible Information
+              <br><p class="indent">The design communicates necessary information effectively to the user, regardless of ambient conditions or the user’s sensory abilities</p>
+            </li>
+            <li>
+              Tolerance for Error
+              <br><p class="indent">The design minimizes hazards and the adverse consequences of accidental or unintended actions</p>
+            </li>
+            <li>
+              Low Physical Effort
+              <br><p class="indent">The design can be used efficiently and comfortably and with a minimum of fatigue</p>
+            </li>
+            <li>
+              Size and Space for Approach and Use
+              <br><p class="indent">Appropriate size and space is provided for approach, reach, manipulation, and use regardless of user’s body size, posture, or mobility</p>
+            </li>
+          </ul>
+          
+          <p class="no-indent">
+            It has also been built to meet the Level AA requirements of WCAG 2.1.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+    
+  <div class="container-fluid col-8">
+    <aside role="complementary" aria-labelledby="asideHeading">
+      <h2 id="asideHeading" role="heading" aria-level="2">References</h2>
+
+      <div class="no-indent">
+
+        <ul class="indent">
+          <li>
+            U.S. Census Bureau (2021). Age by Number of Disabilities. American Community Survey 1-Year Estimates, Table B18108. Retrieved from <a href="https://data.census.gov/cedsci/table?q=b18108&y=2021&tid=ACSDT1Y2021.B18108" target="_blank">https://data.census.gov/cedsci/table?q=b18108&y=2021&tid=ACSDT1Y2021.B18108</a>
+          </li>
+          <li>
+            U.S. Census Bureau (2021). Employment Status by Disability Status and Type. American Community Survey 1-Year Estimates, Table B18120. Retrieved from <a href="https://data.census.gov/cedsci/table?q=Disability%20status&y=2021&tid=ACSDT1Y2021.B18120" target="_blank">https://data.census.gov/cedsci/table?q=Disability%20status&y=2021&tid=ACSDT1Y2021.B18120</a>
+          </li>
+          <li>
+            U.S. Census Bureau (2021). Age by Disability Status by Poverty Status. American Community Survey 1-Year Estimates, Table B18130. Retrieved from <a href="https://data.census.gov/cedsci/table?q=Disability%20status&y=2021&tid=ACSDT1Y2021.B18130" target="_blank">https://data.census.gov/cedsci/table?q=Disability%20status&y=2021&tid=ACSDT1Y2021.B18130</a>
+          </li>
+          <li>
+            U.S. Census Bureau (2021). Age by Disability Status by Health Insurance Coverage Status. American Community Survey 1-Year Estimates, Table B18135. Retrieved from <a href="https://data.census.gov/cedsci/table?q=Disability%20status&y=2021&tid=ACSDT1Y2021.B18135" target="_blank">https://data.census.gov/cedsci/table?q=Disability%20status&y=2021&tid=ACSDT1Y2021.B18135</a>
+          </li>
+          <li>
+            U.S. Census Bureau (2021). Selected Economic Characteristics. American Community Survey 1-Year Estimates, Table DP03. Retrieved from <a href="https://data.census.gov/cedsci/table?q=dp03&g=0100000US&tid=ACSDP1Y2021.DP03" target="_blank">https://data.census.gov/cedsci/table?q=dp03&g=0100000US&tid=ACSDP1Y2021.DP03</a>
+          </li>
+          <li>
+            U.S. Census Bureau (2021). ACS Demographic and Housing Estimates. American Community Survey 1-Year Estimates, Table DP05. Retrieved from <a href="https://data.census.gov/cedsci/table?g=0100000US&tid=ACSDP1Y2021.DP05" target="_blank">https://data.census.gov/cedsci/table?g=0100000US&tid=ACSDP1Y2021.DP05</a>
+          </li>
+          <li>
+            U.S. Census Bureau (2021). Educational Attainment. American Community Survey 1-Year Estimates, Table S1501. Retrieved from <a href="https://data.census.gov/cedsci/table?q=s1501&g=0100000US&tid=ACSST1Y2021.S1501" target="_blank">https://data.census.gov/cedsci/table?q=s1501&g=0100000US&tid=ACSST1Y2021.S1501</a>
+          </li>
+          <li>
+            U.S. Census Bureau (2021). Disability Characteristics. American Community Survey 1-Year Estimates, Table S1810. Retrieved from <a href="https://data.census.gov/cedsci/table?q=Disability&y=2021&tid=ACSST1Y2021.S1810" target="_blank">https://data.census.gov/cedsci/table?q=Disability&y=2021&tid=ACSST1Y2021.S1810</a>
+          </li>
+        </ul>
+        
+      </div>   
+    </aside>
+  </div>
+
+  <div class="d-flex justify-content-center">
+    <footer role="contentinfo">
+      &copy; All Rights Reserved - 2023 Coleman
+    </footer>
+  </div>
+
+  <script type="module" src="./javascripts/main.js"></script>
+
+</body>
+</html>
