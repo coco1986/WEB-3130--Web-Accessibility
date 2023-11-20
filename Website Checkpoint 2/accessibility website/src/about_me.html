@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Accessible Site - About Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IM+Fell+English&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
+  </div>
+  
+  <header class="p-3">
+    <div class="d-flex flex-md-row flex-column align-content-center mb-3 border-bottom text-center">
+
+      <span id="pageTitle" class="fs-4 me-md-auto mb-3">Cory Coleman's Accessible Site</span>
+
+      <nav class="" aria-label="Main Navigation">
+          <ul id="navList" class="nav nav-pills nav-fill flex-column flex-sm-row">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link" target="_blank">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="plain_language.html" class="nav-link" target="_blank">Plain Language</a>
+            </li>
+            <li class="nav-item">
+              <a href="design.html" class="nav-link" target="_blank">Design</a>
+            </li>
+            <li class="nav-item">
+              <a href="about_me.html" class="nav-link active" aria-current="page">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link" target="_blank">Contact Me</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+
+    <div role="banner" class="aboutHead mx-auto text-center">
+        <h1>About Me</h1>
+    </div>
+
+  </header>
+
+  <main id="mainContent" role="main" class="container mt-4">
+
+    <article class="py-3">   
+        <h2 class="text-center pb-3">Cory Coleman</h2>
+
+        <figure class="figure col-md-5 float-md-start ms-md-3 order-first mt-2">
+            <img src="./images/Cory.JPG" class="coryPic figure-img img-fluid rounded" width="500" height="600" alt="image of Cory Coleman">
+        </figure>
+
+        <p class="aboutCory">
+            Cory Coleman is a dedicated and passionate individual currently pursuing his Bachelor's in Web and User Experience. With a profound interest in the intricate world of web design, Cory has demonstrated a keen aptitude for creating seamless and user-friendly digital experiences. As an aspiring professional in the field, Cory combines technical expertise with a creative flair, consistently pushing the boundaries of innovation in web development. His commitment to excellence is evident not only in his academic pursuits but also in his practical application of web design principles.
+        </p>
+
+        <p>
+            Beyond the digital realm, Cory finds solace and inspiration in the realm of music. A skilled guitarist, he immerses himself in the art of creating his own music. Cory's appreciation for various genres is reflected in his diverse musical tastes, further enriching his creative perspective.
+        </p>
+
+        <p>
+            In addition to his musical pursuits, Cory is an avid enthusiast of Nintendo video games. His passion for gaming extends beyond mere recreation, serving as a source of inspiration for his approach to user experience design. The intricate worlds and immersive storytelling found in video games contribute to Cory's holistic understanding of interactive design.
+        </p>
+
+        <p>
+            Outside the realms of technology and entertainment, Cory indulges in the art of photography. Through his lens, he captures the beauty of everyday moments, showcasing a unique perspective that mirrors his ability to perceive the world through a creative lens.
+        </p>
+
+        <p>
+            Cory Coleman's journey in the intersection of web design, music, gaming, and photography reflects a holistic approach to life. His dedication to both the analytical and creative aspects of his pursuits sets him apart as a well-rounded individual, ready to make meaningful contributions to the world of digital innovation.
+        </p>
+    </article>
+
+    <div id="divider" class="border-bottom shadow-lg p-1 bg-body rounded divider"></div>
+
+    <article class="py-1">
+        <div id="hearAcc" class="col-12 mt-4" aria-labelledby="hearHeader">
+            <h2>When I Hear "Accessibility"</h2>
+            <p>
+                Accessibility is a fundamental principle that ensures equal access and usability of products, services, and information for people of all abilities. In the context of the web, accessibility is crucial to create an inclusive online environment, allowing individuals with disabilities to navigate, interact, and consume content seamlessly.
+            </p>
+            <p>
+                I believe that prioritizing accessibility not only aligns with ethical considerations, but also contributes to a positive user experience for everyone. In essence, a commitment to accessibility reflects a commitment to universal design principles, fostering an online space where information and services are available to everyone, regardless of their physical or cognitive abilities. Embracing accessibility is not just a legal or moral obligation; it is a step toward building a more inclusive and equitable digital world.
+            </p>
+
+            <h2>Automated Tools are NOT Enough</h2>
+            <p>
+                Automated tests can take longer to develop than manual tests, especially if they are not well designed. They can also be more challenging to implement into your development workflow. One of the main drawbacks of automated testing is that it initially takes a significant amount of time and money to implement. Automated tests can sometimes fail even when there is no actual issue present. For example, this can be the case if the test contains an error or is not comprehensive enough to cover all of its intended use cases.
+            </p>
+
+            <h3>Accessibility Standards I Use</h3>
+            <p>
+                Because I am committed to accessibility I use the following standards:
+            </p>
+
+            <ul class="standardsList">
+                <li>
+                   <span>HTML 5 Semantic Elements</span>
+                </li>
+                <li>
+                    <span>CSS3</span>
+                </li>
+                <li>
+                    <span>WAI-ARIA</span>
+                </li>
+                <li>
+                    <span>WCAG 2.2</span>
+                </li>
+                <li>
+                    <span>Text Alternatives: </span>I provide descriptive text alternatives for non-text content such as images, graphs, and charts. This ensures that users with visual impairments can understand the content through assistive technologies like screen readers.
+                </li>
+                <li>
+                    <span>Keyboard Accessibility: </span>I Ensure that all functionality is operable through a keyboard interface alone, without requiring specific timings for keystrokes. This helps users who may have difficulty using a mouse or other pointing device.
+                </li>
+                <li>
+                    <span>Navigation and Focus: </span>I design navigable, consistent, and predictable websites. Provide skip navigation links, and ensure that focus is visible and can be managed by users who navigate with a keyboard or other assistive technologies.
+                </li>
+                <li>
+                    <span>Distinguishable: </span>I ensure that content, text, and images of text have sufficient contrast, making them easily readable. This is essential for users with low vision or color blindness.
+                </li>
+            </ul>
+
+            <h3>Why Inclusion During Design Matters</h3>
+            <p class="inclusion">
+                Including all people in testing and web design processes is crucial for achieving and maintaining web accessibility goals for several reasons:
+            </p>
+
+            <ul class="incList">
+                <li>
+                    <span>Diverse Perspectives: </span>People have diverse abilities, experiences, and needs. Involving individuals with different abilities, including those with disabilities, provides valuable insights into how various users interact with and perceive digital content. This diversity helps identify a broader range of accessibility issues and ensures that solutions cater to a wide audience.
+                </li>
+                <li>
+                    <span>User-Centered Design: </span>People have diverse abilities, experiences, and needs. Involving individuals with different abilities, including those with disabilities, provides valuable insights into how various users interact with and perceive digital content. This diversity helps identify a broader range of accessibility issues and ensures that solutions cater to a wide audience.
+                </li>
+                <li>
+                    <span>Identifying Unintended Barriers: </span>People who are not directly involved in the development process might encounter barriers that developers overlook. Inclusive testing helps uncover unintended obstacles or usability issues that might not be apparent to the design team, fostering a more thorough and effective testing process.
+                </li>
+                <li>
+                    <span>Testing with Assistive Technologies: </span>Individuals with disabilities often use assistive technologies such as screen readers, magnifiers, or voice input devices. Including users of these technologies in testing ensures that the website is compatible with a variety of tools and that the user experience is seamless for those relying on them.
+                </li>
+                <li>
+                    <span>Legal and Ethical Considerations: </span>In many regions, there are legal requirements and standards (such as the Americans with Disabilities Act in the United States) that mandate accessibility for digital services. Inclusive testing helps organizations comply with these legal obligations, preventing potential legal issues and promoting ethical design practices.
+                </li>
+                <li>
+                    <span>User Satisfaction and Engagement: </span>By including a diverse range of users, designers can create websites that are more user-friendly and enjoyable for everyone. Considering the needs of all users contributes to a positive user experience, resulting in increased satisfaction and engagement with the website.
+                </li>
+            </ul>
+        </div>
+    </article>
+
+    <div id="divider" class="border-bottom shadow-lg p-1 bg-body rounded divider"></div>
+
+    <div id="accStatement" class="col-12 mt-4" aria-labelledby="statementHeader">
+        <h2 class="text-center pb-3">My Accessibility Statement</h2>
+        <h3 id="purposeHeader">Website Purpose</h3>
+        <p>
+            Cory Coleman's Accessible Website serves to demonstrate how individuals can create WCAG (Web Content Accessibility Guidelines) compliant websites.
+        </p>
+
+        <h3 id="measuresHeader">Measures of Accessibility</h3>
+        <p>
+            Cory Coleman is commited to ensuring accessibility through these measures:
+        </p>
+
+        <ul class="measureList">
+            <li>
+                Inclusion of accessibility in the mission statement.
+            </li>
+            <li>
+                Assign clear accessibility goals and responsibilities.
+            </li>
+            <li>
+                Integration of accessibility in internal policies.
+            </li>
+            <li>
+                Incorporation of accessibility into procurement practices
+            </li>
+        </ul>
+
+        <h3 id="confHeader">Conformance Status</h3>
+        <p>
+            The website is partially conformant with WCAG 2.1 level AA. Partially conformant means that some parts of the content do not fully conform to the accessibility standard. 
+        </p>
+
+        <h3 id="feedbackHeader">Feedback</h3>
+        <p>
+            Users are highly encouraged to provide honest feedback regarding accessibility barriers through email at <span>corycoleman@mail.weber.edu</span>.
+        </p>
+
+        <h3 id="specsHeader">Technical Specifications</h3>
+        <p>
+            Accessibility of Cory's Accessible Website relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer: 
+        </p>
+
+        <ul class="specsList">
+            <li>
+                HTML
+            </li>
+            <li>
+                WAI-ARIA
+            </li>
+            <li>
+                CSS
+            </li>
+            <li>
+                JavaScript
+            </li>
+        </ul>
+
+        <h3 id="assessHeader">Assessment Approach</h3>
+        <p>
+            Cory Coleman personally assessed the website's accessibility and aims to continually improve it through feedback, iterative updates, and self-evaluation.
+        </p>
+
+        <h5 id="assessHeader">Date</h5>
+        <p>
+            This statement was created on 06 October 2023 using the W3C Accessibility Statement Generator Tool.
+        </p>
+    </div>
+  </main>
+  
+  <footer role="contentinfo" class="pt-4 my-md-5 border-top text-center">
+    &copy; All Rights Reserved - 2023 Coleman
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+
+</body>
+</html>
