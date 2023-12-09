@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Accessible Site - Site Design</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IM+Fell+English&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
+  </div>
+
+  <header class="p-3">
+        <div class="d-flex flex-md-row flex-column align-content-center mb-3 border-bottom text-center">
+
+        <span id="pageTitle" class="fs-4 me-md-auto mb-3">Cory Coleman's Accessible Site</span>
+
+        <nav class="" aria-label="Main Navigation">
+            <ul id="navList" class="nav nav-pills nav-fill flex-column flex-sm-row">
+                <li class="nav-item">
+                <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                <a href="plain_language.html" class="nav-link">Plain Language</a>
+                </li>
+                <li class="nav-item">
+                <a href="design.html" class="nav-link active" aria-current="page">Design</a>
+                </li>
+                <li class="nav-item">
+                <a href="about_me.html" class="nav-link">About Me</a>
+                </li>
+                <li class="nav-item">
+                <a href="contact.html" class="nav-link">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
+
+        <div role="banner" class="aboutHead mx-auto text-center">
+            <h1>Site Design</h1>
+        </div>
+
+    </header>
+
+    <main id="mainContent" role="main" class="container mt-4">
+
+        <div id="intro-summary" class="col-12">
+            <h2>Site Design Process</h2>
+            <p>
+                Creating an accessible website is essential to ensure that users of all abilities can perceive, understand, navigate, and interact with the content effectively. One crucial aspect of accessibility lies in choosing appropriate fonts, font sizes, colors, and visual elements. These choices significantly impact the user experience for people with various disabilities, including visual impairments and cognitive challenges. Another crucial aspect of accessibility involves the structure of the website because it directly affects how users, including those with disabilities, interact with and navigate through the content on a website.
+            </p>
+        </div>
+
+        <div id="v-design" class="col-12">
+            <h3>Visual Design:</h3>
+            <p>
+                Visually I wanted this site to be simple. The color scheme was chosen by finding some colors that I liked by using the website <a href="https://coolors.co" class="refLink" target="_blank">Coolors</a> and I chose colors that I thought would go well together and then using <a href="https://webaim.org/resources/contrastchecker/" class="refLink" target="_blank">WebAIM: Contrast Checker</a>, a free online application that allowed me to see color contrasts comparing a foreground color with a background color resulting in a pass ro fail contrast ratio as well as telling me if it passes normal text, large text, graphical objects and user interface components. I am pleased to say that the design of this site passes and meets all WCAG AA and WCAG AAA requirements in these categories. I made sure that each of the contrasts I chose had a contrast ratio of 7 or higher to ensure that this site would at the very least meet WCAG AA requirements.
+            </p>
+            <p>
+                The paragraphs of the site has been primarily kept in a left aligned fashion so as to not make the brain work harder since we learn to read left to right and are accustomed to text being laid out that way from an early age. Tables on the site have been properly captioned, images have been given alternative text, and all buttons, links, and forms have been coded to follow WAI-ARIA guidelines so those who rely on screen readers receive meaningful descriptions. The general font size I have chosen is 16 pixels. I chose this size because it is about the same size as text printed in a book or magazine, it is the size browsers display by default and were intended to display. As for the fonts themselves, I have chosen Verdana along with Arial, Tahoma, and San-serif as backup fonts. For my headers I have chosen Fredericka the Great because I really loved the look of it and that it was readable. 
+            </p>
+        </div>
+
+        <div id="structure" class="col-12">
+            <h3>Structural Design:</h3>
+            <p>
+                Structurally the design is also simple, but accessible. I used level one headings at the top of each page and ensured that subsquent headings were done in order (i.e. level one, level two, level three, and so on). I used many semantic HTML5 elements such as article, aside, figcaption, figure, footer, header, main, nav, paragraph, section, and heading tags to structure the site. I used a skip link so that users who can only use a keyboard, screen readers, switch controls, and other assistive technologies can use the link to reach the main content of the site easier and faster.
+            </p>
+            <p>
+                As we live in a world of so many devices that come in a variety of different sizes, I designed the site to be responsive, meaning that the site will render well on all screen sizes and resolutions. I kept the structure consistent throughout the site to allow users to predict the location of certain elements because predictability is important for users with cognitive disabilities and helps create a more user-friendly experience for everyone. Lastly, my goal was to follow accessibility standards known as Web Content Accessibility Guidelines (WCAG). The structural design of this site will meet WCAG2.2 AA guidelines.
+            </p>
+        </div>
+
+    </main>
+
+    <footer role="contentinfo" class="pt-4 my-md-5 border-top text-center">
+        &copy; All Rights Reserved - 2023 Coleman
+    </footer>
+    
+    <script type="module" src="./javascripts/main.js"></script>
+    
+</body>
+</html>

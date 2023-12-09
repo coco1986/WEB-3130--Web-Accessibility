@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Accessible Site - Contact Me</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./stylesheets/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=IM+Fell+English&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+  <div id="skip">
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
+  </div>
+
+  <header class="p-3">
+    <div class="d-flex flex-md-row flex-column align-content-center mb-3 border-bottom text-center">
+
+      <span id="pageTitle" class="fs-4 me-md-auto mb-3">Cory Coleman's Accessible Site</span>
+
+      <nav class="" aria-label="Main Navigation">
+          <ul id="navList" class="nav nav-pills nav-fill flex-column flex-sm-row">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="plain_language.html" class="nav-link">Plain Language</a>
+            </li>
+            <li class="nav-item">
+              <a href="design.html" class="nav-link">Design</a>
+            </li>
+            <li class="nav-item">
+              <a href="about_me.html" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link active" aria-current="page">Contact Me</a>
+            </li>
+          </ul>
+      </nav>
+    </div>
+
+    <div role="banner" class="contact p-1 mx-auto text-center">
+      <h1>Contact Me</h1>
+      <div class="row-md">
+        <div class="col-md">
+          <p class="pContact col-md-6 mx-auto fs-5">
+            Greetings and thank you for visiting! I'm excited to engage with you. <br>Whether you have inquiries, feedback, or simply want to drop a greeting, <br>this is the starting point for our conversations.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </header>
+
+  <main id="mainContent" role="main" class="container mt-5">
+    <h2 class="text-center">Get in Touch</h2>
+    <p>
+        My contact page is intentionally created with accessibility at the forefront, making it easy for individuals of diverse backgrounds and abilities to reach out. I've aimed to design a space that is both inclusive and inviting. Don't hesitate to get in touch, and let's have a chat. Your thoughts, inquiries, and perspectives are not only appreciated but actively encouraged in this inclusive online environment.
+    </p>
+    <p>
+      Cheers to the journey ahead!
+    </p>
+
+    <form>
+        <fieldset class="personal rounded-3 mt-3 p-3 d-flex flex-column">
+          <legend class="fs-3">Personal Information</legend>
+            <div class="form-floating mb-3">
+              <input type="text" name="fullname" id="fullname" class="form-control" required aria-required="true" placeholder="Full Name">
+              <label for="fullname">Full Name</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" name="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Email" oninput="validateEmail(this.value)" required>
+              <label for="email">Email</label>
+              <div id="emailHelp" class="form-text fs-6">
+                I'll never share your email with anyone.
+              </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="message rounded-3 mt-3 p-3 d-flex flex-column">
+          <legend class="fs-3">Message</legend>
+            <label for="reason" name="reason" class="form-label">Reason for Contacting:</label>
+            <select name="reason" id="reason" class="form-select" required>
+              <option value="">Please select</option>
+              <option value="sayhello">Just saying "hello"</option>
+              <option value="collaboration">I want to collaborate</option>
+              <option value="feedback">I have some feedback</option>
+              <option value="bug">I found a bug/issue</option>
+            </select>
+          <label for="subject" class="form-label mt-2">Subject</label>
+          <input type="text" name="subject" id="subject" class="form-control form-control-lg">
+          <label for="message" class="form-label mt-2">Content</label>
+          <textarea name="message" id="message" rows="10" class="form-control" required></textarea>
+        </fieldset>
+
+        <fieldset class="hearAbout row col-12 mx-auto p-3 rounded-3 mt-3">
+          <div class="col">
+            <legend>How did you hear about me?</legend>
+              <div class="form-check">
+                <input id="tookClass" type="checkbox" name="tookClass" class="form-check-input">
+                <label for="tookClass" class="form-check-label">I took your class</label>
+              </div>
+              <div class="form-check">
+                <input id="friendClass" type="checkbox" name="friendClass" class="form-check-input">
+                <label for="friendClass" class="form-check-label">A friend took your class</label>
+              </div>
+              <div class="form-check">
+                <input id="realLife" type="checkbox" name="realLife" class="form-check-input">
+                <label for="realLife" class="form-check-label">I know you in real life, but not from class</label>
+              </div>
+          </div>
+          <div class="col">
+            <legend>Do you want to get me a Starbucks?</legend>
+            <div class="form-check">
+              <input type="radio" id="sure" name="starbucks" class="form-check-input">
+              <label for="sure" class="form-check-label">I would love to!</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" id="nope" name="starbucks" class="form-check-input">
+              <label for="nope" class="form-check-label">Sorry I'm saving for a downpayment</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div id="sendBtn" class="d-grid gap-2 col-3 ms-auto mt-3">
+          <button type="submit" class="btn btn-ctn fs-5 shadow-sm" role="button">Send</button>
+        </div>
+    </form>
+
+  </main>
+
+  <footer role="contentinfo" class="pt-4 my-md-5 border-top text-center">
+    &copy; All Rights Reserved - 2023 Coleman
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+  <script>
+    function validateEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const liveRegion = document.getElementById('live-region');
+
+      if (email === '') {
+        liveRegion.textContent = 'Email is required.';
+      }
+      else if (!emailRegex.text(email)) {
+        liveRegion.textContent = 'Please enter a valid email address.';
+      }
+      else {
+        liveRegion.textContent = ''; // Clear the live region if the email is valid
+      }
+    }
+  </script>
+
+</body>
+</html>

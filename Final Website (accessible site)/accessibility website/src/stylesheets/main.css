@@ -1,0 +1,438 @@
+/* Your styles go here */
+/*Variables*/
+
+/*
+Colors:
+
+#034E70 - Dark Cerulean
+#36454F - Charcoal
+#FFE529 - Banana Yellow
+#FFF28F - Flax (light yellow)
+#800080 - Patriarch (purple)
+#F2B3FF - Brilliant Lavender (light pink)
+
+*/
+
+/*import Boostrap*/
+@import "bootstrap/scss/bootstrap";
+
+/*after Bootstrap*/
+
+/* GLOBAL STYLES */
+
+html{
+    box-sizing: border-box;
+    font-family: Verdana, Arial, Tahoma, san-serif;
+    font-size: 18px;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #034E70;
+    color: white;
+}
+
+header {
+    background-color: #36454F;
+    color: #FFE529;
+    font-size: 30px !important;
+}
+
+#pageTitle {
+    font-family: 'Fredericka the Great', serif;
+    /* font-family: 'IM Fell English', serif; */    /*Adding this with the other font creates a fun and different font*/
+}
+
+nav {
+    font-size: 21px;
+}
+
+#navList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & > li{
+
+        a{
+            text-decoration: none;
+            color: #FFE529 !important;
+            font-size: 18px;
+
+                &[aria-current=page] {
+                    background-color: #FFF28F !important;
+                    color: #36454F !important;
+                }
+                
+                &:focus{
+                    background-color: #800080 !important;
+                    border-color: 5px solid white !important;
+                    color: white !important;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
+
+                &:focus-visible{
+                    outline: 3px solid #800080 !important;
+                }
+
+                &:hover {
+                    background-color: #FFF28F !important;
+                    color: #36454F !important;
+                    font-weight: bold;
+                    text-decoration: underline !important;
+                }
+
+        }
+    }
+
+}
+
+a {
+    color: #A6FFBD;
+}
+
+a:active {
+    background-color: #36454F !important;
+}
+
+a:focus {
+    background-color: #800080 !important;
+    color: white !important;
+}
+
+a:hover {
+    background-color: #F2B3FF;
+    color: white !important;
+    text-decoration: underline !important;
+}
+
+h1 {
+    color: #FFE529;
+    font-family: 'Fredericka the Great', serif;
+}
+
+h2 {
+    color: #FFE529;
+    font-family: Tahoma;
+}
+
+h3 {
+    color: #FFE529;
+    font-family: Tahoma;
+}
+
+h4 {
+    color: #FFE529;
+    font-family: Tahoma;
+}
+
+h5 {
+    color: #FFE529;
+    font-family: Tahoma;
+}
+
+p {
+    line-height: 2;
+}
+
+img {
+    box-shadow: 10px 10px 5px #212931;
+}
+
+/* for skip link */
+#skip {
+    background-color: #36454F !important;
+
+        a {
+            position:absolute;
+            left:-10000px;
+            top:auto;
+            width:1px;
+            height:1px;
+            overflow:hidden;
+        
+            &:focus{
+                background-color: #800080;
+                color: white !important;
+                position:static;
+                width:auto;
+                height:auto;
+            }
+        
+            &:focus-visible{
+                outline: none;
+            }
+        
+        }
+}
+
+footer {
+    margin: 3em;
+}
+
+#references {
+        a {
+            &:hover{
+                background-color: #800080;
+                color: white !important;
+                text-decoration: underline !important;
+            }
+            
+        }
+}
+
+/* ----------------------- */
+
+/* HOME PAGE STYLES */
+
+#learnBtn {
+    background-color: #FFF28F !important;
+    border-radius: 5px;
+
+        a{
+            &:hover{
+                background-color: #800080 !important;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                text-decoration: underline !important;
+            }
+    
+            &:focus{
+                background-color: #800080 !important;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                text-decoration: underline !important;
+            }
+
+            &:focus-visible{
+                outline: none;
+            }
+        }    
+        
+}
+
+.pState {
+    color: white;
+    line-height: 2 !important;
+}
+
+table {
+    background-color: white !important;
+    color: black !important;
+}
+
+caption {
+    color: #FFE529 !important;
+    font-style: italic;
+}
+
+#universal-design {
+    margin-top: 3rem;
+}
+
+blockquote {
+    border: 2px solid #F2B3FF;
+    border-radius: 10px;
+    color: #F2B3FF;
+    font-family: 'Fredericka the Great', serif;
+    font-size: 35px !important;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.principles {
+    color: #FFE529;
+    font-weight: bold;
+}
+
+/* LANGUAGE PAGE STYLES */
+
+#behaviorLinks, #learnUser, #printLink, #pdfLink, #writeBetter, #effectiveLink, #formalLinks {        
+        a {
+            &:focus{
+                background-color: #800080;
+                color: white !important;
+            }
+
+            
+            &:hover{
+                background-color: #800080;
+                color: white !important;
+                text-decoration: underline !important;
+            }
+        }
+}
+
+.eyetrack_map {
+    height: 620px;
+    width: auto;
+}
+
+figcaption {
+    color: #FFE529 !important;
+    font-style: italic;
+}
+
+.behaviorList, .prepareList, .taskList, .webList, .remList, .adaptList, .pdfList, .useList, .formalList, .effList {
+    line-height: 2;
+}
+
+.webList {
+    span{
+        font-weight: bold !important;
+    }
+}
+
+.remSpan {
+    font-weight: bold !important;
+}
+
+/* DESIGN PAGE STYLES */
+
+#v-design {
+    a {
+        &:hover{
+            background-color: #800080;
+            color: white !important;
+            text-decoration: underline !important;
+        }
+        
+    }
+}
+
+/*ABOUT ME PAGE STYLES*/
+
+.divider {
+    background-color: #F2B3FF !important;
+}
+
+.measureList, .standardsList, .incList {
+    line-height: 2;
+}
+
+.standardsList, .incList {
+    span {
+        font-weight: bold;
+    }
+}
+
+#accStatement {
+    span {
+        font-style: italic;
+    }
+}
+
+/* CONTACT ME PAGE STYLES */
+
+.pContact {
+    color: white;
+    line-height: 2 !important;
+}
+
+input[type=text]:focus {
+    outline: 5px solid #800080;
+}
+
+input[type=email]:focus {
+    outline: 5px solid #800080;
+}
+
+.message select:focus {
+    outline: 5px solid #800080;
+}
+
+.message textarea:focus {
+    outline: 5px solid #800080;
+}
+
+input[type=checkbox]:focus {
+    outline: 5px solid #800080;
+}
+
+input[type=radio]:focus {
+    outline: 5px solid #800080;
+}
+
+.form-floating {
+
+    label{
+        color: #36454F;
+    }
+
+}
+
+.personal {
+    background-color: #FFF28F;
+    
+        & > legend{
+            color: #36454F;
+            font-weight: 550;
+        }
+}
+
+.message {
+    background-color: #FFF28F;
+    
+        & > legend{
+            color: #36454F;
+            font-weight: 550;
+        }
+
+        & > label{
+            color: #36454F;
+            font-weight: 550;
+        }
+}
+
+.hearAbout {
+    background-color: #FFF28F;
+    
+        div > legend{
+            color: #36454F;
+            font-weight: 550;
+        }
+
+        div > label{
+            color: #36454F;
+        }
+}
+
+#emailHelp {
+    color: #36454F;
+}
+
+#sendBtn {
+    background-color: #FFF28F !important;
+    border-radius: 5px;
+
+        button{
+            
+            &:hover{
+                background-color: #800080 !important;
+                border-radius: 5px;
+                color: white !important;
+                font-weight: bold;
+                text-decoration: underline !important;
+            }
+    
+            &:focus{
+                background-color: #800080 !important;
+                border-radius: 5px;
+                color: white;
+                font-weight: bold;
+                text-decoration: underline !important;
+            }
+
+            &:focus-visible{
+                outline: none;
+            }
+            
+        }    
+        
+}   
